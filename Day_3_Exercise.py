@@ -76,3 +76,48 @@ print('Enter side c:')
 side_c = input()
 perimeter_of_triangle = int(side_a) + int(side_b) + int(side_c)
 print('The perimeter of the triangle is', int(perimeter_of_triangle))
+
+#Get length and width of a rectangle using prompt. Calculate its area (area = length x width) and perimeter (perimeter = 2 x (length + width))
+print('Find the area and perimeter of a rectangle.')
+print('Enter side a:')
+side_a_w = input()
+print('Enter side b:')
+side_b_l = input()
+area_of_rectangle = int(side_a_w) * int(side_b_l)
+perimeter_of_rectangle = (int(side_a_w) + int(side_b_l)) * 2
+print('The area of the rectangle is', int(area_of_rectangle))
+print('The perimeter of a rectangle is', int(perimeter_of_rectangle))
+
+#Get radius of a circle using prom1
+#Calculate the area (area = pi x r x r) and circumference (c = 2 x pi x r) where pi = 3.14.
+print('Get the radius and circumference of a circle')
+print('Enter Radius:')
+raidus = input()
+area_of_a_cirlce = 3.14 * int(raidus)**2
+circumference = 2 * 3.14 * int(raidus)
+print('Get the radius and circumference of a circle')
+print('Enter Radius:', int(raidus))
+print('Area is', int(area_of_a_cirlce))
+print('Circrumference is', int(circumference))
+
+#Calculate the slope, x-intercept and y-intercept of y = 2x -2
+print('Find the slope')
+x = input()
+y_slope = (2*int(x)-2)
+print(y_slope)
+
+#Slope is (m = y2-y1/x2-x1). Find the slope and Euclidean distance between point (2, 2) and point (6,10)
+print('Point one is (2,2)')
+print('Point one is (6,10)')
+slope = (10 - 2) / (6 - 2)
+print(slope)
+
+#Compare the slopes in tasks 8 and 9.
+print('y slope is', y_slope, 'and', 'slope is', slope)
+
+#Calculate the value of y (y = x^2 + 6x + 9). Try to use different x values and figure out at what x value y is going to be 0.
+print('Enter x:', )
+x = input()
+print(int(x)**2)
+value_of_y = int(x)**2 + 6*(int(x)) + 9
+#print(value_of_y)
