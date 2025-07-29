@@ -28,7 +28,17 @@ fruits = ('banana','orange','mango','lemon')
 print('End: What determines a Tuple.')
 
 print('Begin: How to determine a tuple length')
-# 
+# print(len(<variable/tuple>))
 tpl = ('item1','item2','item3')
-len(tpl)
+print(len(tpl))
+print('End: How to dertime a tuple length')
 
+print('Begin: How to index tuples postive or negative.')
+# <variable/tuple>[<integer>] or 
+fruits = ('banana','orange','mango','lemon') #index values (-4,-3,-2,-1)
+first_fruit = fruits[0]
+last_fruit = fruits[-1]
+print(first_fruit)
+print(fruits[1])
+print(last_fruit)
+print('End: How to index tuples positive or negative')
