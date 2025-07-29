@@ -23,4 +23,12 @@ print('Begin: What determines a Tuple.')
 # <variable> = () or <variable> = tuple()
 empty_tuple = ()
 empty_tuple = tuple()
+tpl = ('item1','item2','item3')
+fruits = ('banana','orange','mango','lemon')
 print('End: What determines a Tuple.')
+
+print('Begin: How to determine a tuple length')
+# 
+tpl = ('item1','item2','item3')
+len(tpl)
+
