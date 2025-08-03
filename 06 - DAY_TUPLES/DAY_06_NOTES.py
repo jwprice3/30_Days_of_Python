@@ -89,3 +89,4 @@ fruits = ('banana','orange','mango','lemon')
 del fruits
 # print(fruits) 
 # NameError: name 'fruits' is not defined. Did you mean: 'fruits_1'?
+print('End: How to delete a tuple.')
