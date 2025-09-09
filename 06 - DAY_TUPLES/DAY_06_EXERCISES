@@ -27,8 +27,43 @@ print('Question 5: Modify the siblings tuple and add the name of your father and
 siblings = sisters + brothers
 siblings = list(siblings)
 print('The siblings variable is now a',type(siblings))
-siblings.insert(0,'M') # used the insert method, can only be done in list
-siblings.insert(1,'Q') # used the insert method, can only be done in list
-print(siblings)
-siblings = tuple(siblings)
-print('The variable siblings is now', type(siblings))
+siblings.insert(0,'Mother') # used the insert method, can only be done in list
+siblings.insert(1,'Father') # used the insert method, can only be done in list
+family_members = siblings
+family_members = tuple(family_members)
+print(family_members)
+
+print('Exercises: Level 2')
+print('Question 1: Unpack siblings and parents from family_members.')
+family_members = list(family_members)
+print('the famiiy_members variable is now:', (type(family_members)))
+print(len(family_members))
+print(family_members[2:8])
+
+print('Question 2: Create fruits, vegetables and animal products tuples. Join the three tuples and assign it to a variable called food_stuff_tp.')
+fruits = ('banana', 'orange', 'mango', 'lemon')
+vegetables = ('Tomato', 'Potato', 'Cabbage','Onion', 'Carrot')
+animal_products = ('Milk', 'Meat', 'Cheese')
+food_stuff_tp = fruits + vegetables + animal_products
+
+print('Question 3: Change the about food_stuff_tp tuple to a food_stuff_lt list')
+print(food_stuff_tp)
+food_stuff_tp = list(food_stuff_tp) # must change to list first OOP
+food_stuff_it = food_stuff_tp
+print(type(food_stuff_tp))
+
+print('Quesstion 4: Slice out the middle item or items from the food_stuff_tp tuple or food_stuff_lt list.')
+print(len(food_stuff_it))
+print(food_stuff_it[6:8])
+
+print('Question 5: Slice out the first three items and the last three items from food_staff_lt list')
+print(len(food_stuff_it))
+print(food_stuff_it[0:2])
+
+print('Question 6: Delete the food_staff_tp tuple completely')
+del food_stuff_it 
+
+print('Question 7: Check if an item exists in tuple, Check if Estonia is a nordic country, Check if Iceland is a nordic country')
+nordic_countries = ('Denmark', 'Finland','Iceland', 'Norway', 'Sweden')
+print('Is Estonia a nordic country?', 'Estonia' in nordic_countries)
+print('Is Iceland a nordic country?', 'Iceland' in nordic_countries)
