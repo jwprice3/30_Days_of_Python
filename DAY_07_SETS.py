@@ -63,3 +63,76 @@ fruits = {'banana', 'orange', 'mango', 'lemon'}
 fruits.clear()
 print(fruits)
 print('End: How to remove items from a set')
+
+print('Begin: How to delete a set.') # del <variable/set>
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+del fruits
+# print(fruits)
+print('End: How tod delete a set.')
+
+print('Begin: How to convert a list to a set.') # <variable/new set = set(<varible/list)
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits = set(fruits)
+print(type(fruits))
+print('End: How to convert a list to a set.')
+
+print('Begin: How to join sets.') # <variable/set>.union(<variable/set) or <variable/set>.update(<variable/set)
+# .union creates a new set
+# .update appends to the old
+# not used in print
+# method 
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+vegetables = {'potato', 'cabbage', 'onion'}
+healthy_food = fruits.union(vegetables)
+print(healthy_food)
+# or
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+vegetables = {'potato', 'cabbage', 'onion'}
+fruits.update(vegetables)
+print(fruits)
+print('End: How to join sets.')
+
+print('Begin: How to find the .intersection of items.') # <varibale/set.intersection(<variable/set>)
+fruits = {'banana', 'orange', 'mango', 'lemon', 'tomato'}
+vegetables = {'potato', 'cabbage', 'onion', 'tomato'}
+fruits.intersection(vegetables)
+print(fruits.intersection(vegetables))
+print('End: How to find the .intersection of items.')
+
+print('Begin: How to create a issubset and issuperset.') # <variable/set>.isssubset.<larger varaible/set> , <larger variable/set>.isssuperset.<smaller varaible/set> 
+# boolean
+# method
+fruits = {'banana', 'orange', 'mango', 'lemon', 'tomato'}
+healthy_foods = {'potato', 'cabbage', 'onion', 'tomato','banana','orange', 'mango', 'lemon', 'tomato'}
+fruits.issubset(healthy_foods)
+healthy_foods.issuperset(fruits)
+print(fruits.issubset(healthy_foods))
+print('End: How to create issubset and issuperset.')
+
+print('Begin: How to determine the difference between two sets.') # larger variable/set>.difference.<smaller varaible/set>
+# method
+# larger set needs to be first
+# shows what is missing
+numbers = {1,2,3,4,5,6,7}
+even_numbers = {2,4,6}
+even_numbers.difference(numbers)
+print(numbers.difference(even_numbers))
+print('End: How to determine the difference between two sets.')
+
+
+print('Begin: How to determine the symmetric_difference between two sets.') # larger variable/set>.symmetric_difference.<smaller varaible/set>
+# method
+# does show intersection
+numbers = {1,2,3,4,5,6,7}
+even_numbers = {2,4,6,8,10}
+print(numbers.symmetric_difference(even_numbers))
+print('End: How to determine the symmetric_difference between two sets.')
+
+print('Begin: How to determine the .isdisjoint between two sets.') # larger variable/set>.symmetric_difference.<smaller varaible/set>
+# method
+# booleon
+# compares two sets and verifies common items
+numbers = {1,2,3,4,}
+even_numbers = {6,8,10}
+print(numbers.isdisjoint(even_numbers))
+print('End: How to determine the .isdisjoint two sets.')
