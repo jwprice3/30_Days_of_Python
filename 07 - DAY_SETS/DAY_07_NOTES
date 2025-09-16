@@ -1,0 +1,138 @@
+################################
+# Title: 30 Days of Python
+# Description: Sets
+# Change Log:
+# JP, Created, 9.10.25
+################################
+
+# A Set is collection of items that are un-indexed distinct elements
+    # set() is a built in function
+
+# How to create a Set
+    # <set/variable()>
+    # <varaible> = {<data>,<data>}
+    # seems to be alphabetical
+
+print('Begin: How to determing a set.')
+st = set()
+st = {'item1','item2','item3','item4'}
+print('End: How to determing a set.')
+
+print('Begin: How to determine the length of a set.') # len<set/variable>{item,item,item}
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+len(fruits)
+print('End: How to determine the length of a set.')
+
+print('Begin: How to confirm if an item is an a set.') # print('item" in)
+# Boolean
+fruits = {'banana', 'orange', 'mango', 'lemon'} 
+print('mango' in fruits)
+print('End: How to confirm if an item is an a set.')
+
+print('Begin: How to add items to a set.') # <variable/set>.add('item) or <variable/set.update(['item','item'])
+# add is one entry
+# update() includes multiple entries
+# method
+fruits = {'banana', 'orange', 'mango', 'lemon'} 
+print(fruits)
+fruits.add('lime')
+# or
+fruits.update(['tomato','clementine'])
+print(fruits)
+print('End: How to add items to a set.')
+
+print('Begin: How to remove items from a set') # <variable/>set.pop() or <variable/set.remove('item') or <variable/set/.clear()
+# methods
+# remove is only one item
+# clear is the entire set
+# pop() is at random
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+fruits.pop()
+print(fruits)
+# To find pop item
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+removed_item = fruits.pop()
+print(removed_item)
+print(fruits)
+# remove specfic item
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+fruits.remove('banana')
+print(fruits)
+# clear set
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+fruits.clear()
+print(fruits)
+print('End: How to remove items from a set')
+
+print('Begin: How to delete a set.') # del <variable/set>
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+del fruits
+# print(fruits)
+print('End: How tod delete a set.')
+
+print('Begin: How to convert a list to a set.') # <variable/new set = set(<varible/list)
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits = set(fruits)
+print(type(fruits))
+print('End: How to convert a list to a set.')
+
+print('Begin: How to join sets.') # <variable/set>.union(<variable/set) or <variable/set>.update(<variable/set)
+# .union creates a new set
+# .update appends to the old
+# not used in print
+# method 
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+vegetables = {'potato', 'cabbage', 'onion'}
+healthy_food = fruits.union(vegetables)
+print(healthy_food)
+# or
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+vegetables = {'potato', 'cabbage', 'onion'}
+fruits.update(vegetables)
+print(fruits)
+print('End: How to join sets.')
+
+print('Begin: How to find the .intersection of items.') # <varibale/set.intersection(<variable/set>)
+fruits = {'banana', 'orange', 'mango', 'lemon', 'tomato'}
+vegetables = {'potato', 'cabbage', 'onion', 'tomato'}
+fruits.intersection(vegetables)
+print(fruits.intersection(vegetables))
+print('End: How to find the .intersection of items.')
+
+print('Begin: How to create a issubset and issuperset.') # <variable/set>.isssubset.<larger varaible/set> , <larger variable/set>.isssuperset.<smaller varaible/set> 
+# boolean
+# method
+fruits = {'banana', 'orange', 'mango', 'lemon', 'tomato'}
+healthy_foods = {'potato', 'cabbage', 'onion', 'tomato','banana','orange', 'mango', 'lemon', 'tomato'}
+fruits.issubset(healthy_foods)
+healthy_foods.issuperset(fruits)
+print(fruits.issubset(healthy_foods))
+print('End: How to create issubset and issuperset.')
+
+print('Begin: How to determine the difference between two sets.') # larger variable/set>.difference.<smaller varaible/set>
+# method
+# larger set needs to be first
+# shows what is missing
+numbers = {1,2,3,4,5,6,7}
+even_numbers = {2,4,6}
+even_numbers.difference(numbers)
+print(numbers.difference(even_numbers))
+print('End: How to determine the difference between two sets.')
+
+
+print('Begin: How to determine the symmetric_difference between two sets.') # larger variable/set>.symmetric_difference.<smaller varaible/set>
+# method
+# does show intersection
+numbers = {1,2,3,4,5,6,7}
+even_numbers = {2,4,6,8,10}
+print(numbers.symmetric_difference(even_numbers))
+print('End: How to determine the symmetric_difference between two sets.')
+
+print('Begin: How to determine the .isdisjoint between two sets.') # larger variable/set>.symmetric_difference.<smaller varaible/set>
+# method
+# booleon
+# compares two sets and verifies common items
+numbers = {1,2,3,4,}
+even_numbers = {6,8,10}
+print(numbers.isdisjoint(even_numbers))
+print('End: How to determine the .isdisjoint two sets.')
