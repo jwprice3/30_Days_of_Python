@@ -50,5 +50,33 @@ student = list(student.items())
 print(student)
 print(type(student))
 
+print('Question 10: Delete one of the items in the dictionary.')
+student = {'first_name':'Steve','last_name':'Rogers',
+           'gender':'male','age':'95','marital status':'singlish',
+           'skills':'leadership ,hand to hand, super strength',
+           'country':'USA','city':'Brooklyn','address':'Avengers Tower'}
 
+print(student)
+popped_item = student.popitem() # renoves the last item
+print(student)
+print(popped_item) 
+# or 
+student = {'first_name':'Steve','last_name':'Rogers',
+           'gender':'male','age':'95','marital status':'singlish',
+           'skills':'leadership ,hand to hand, super strength',
+           'country':'USA','city':'Brooklyn','address':'Avengers Tower'}
+del student['age'] # specific
+print(student)
+# or
+student = {'first_name':'Steve','last_name':'Rogers',
+           'gender':'male','age':'95','marital status':'singlish',
+           'skills':'leadership ,hand to hand, super strength',
+           'country':'USA','city':'Brooklyn','address':'Avengers Tower'}
+popped_item = student.pop(('first_name'))
+print('The poped item is:',popped_item)
+print(student)
 
+print('Question 11: Delete one of the dictionaries.')
+del student
+print('------------ Result below is on purpose, as you deleted the dictionary---------------')
+print(student)
