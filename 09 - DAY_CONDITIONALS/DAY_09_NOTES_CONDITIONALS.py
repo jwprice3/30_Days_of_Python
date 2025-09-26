@@ -33,13 +33,13 @@ else:
 print('End: How to use the "if else" condition.')
 
 print('Begin: How to use the "elif" condition.')
-
 # This checks for multiple conditions
+# Elif is used as an intermediary step before the final else statement
 a = 0
 if a > 0:
     # This is checking if <variable> is less than zero
     print('A is a postive number.')
-elif a < 0:
+elif a < 0: 
     # If <variable> so happens to be less than zero then it is a negative number
     print('A is a negative number.')
 else:
@@ -56,12 +56,36 @@ print('Begin: How to use nested positions.')
 # Nested positions are a way to test multiple conditions before and elif and else statement
 a = 0
 if a > 0: # if the variable is greater than zero then continue to nested condition
-    if a % 2 == 0: # if variable and the remainder operand is more than zero move to print statement
+# if the there is no remainder then it is an even integer it wil read like (8 = 4*2 + 0) 
+# if there is a remainder then it is an odd number it would read like (9=4*2 +1)
+    if a % 2 == 0: 
         print('A is a positive and even integer')
-    else: # the variable is greater than zero which makes it a positive number
+# the variable is greater than zero and even    
+    else: 
         print('A is a positive')
-elif a == 0: # the variable is exactly zero
+# the variable is exactly zero
+elif a == 0: 
     print('A is zero')
 else:
+# the variable is less than zero    
     print('A is a negative number.')
 print('End: How to use nested positions.')
+
+print('Begin: If condition "and" logical operators.')
+# Combining "if" conditions "and" condittion:
+    # code
+a = 0
+# if the there is no remainder then it is an even integer it wil read like (8 = 4*2 + 0) 
+# if there is a remainder then it is an odd number it would read like (9=4*2 +1)
+if a > 0 and a % 2 == 0: 
+    print('A is an even positive integer.')
+# the variable is not equal to zero so it has to be either a 1 and above
+elif a > 0 and a % 2 != 0:
+    print('A is a positive integer.')
+# the varbiable 
+elif a == 0:
+    print('A is zero.')
+else:
+    print('A is negative.')
+
+# 
