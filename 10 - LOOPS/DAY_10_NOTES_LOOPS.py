@@ -98,3 +98,20 @@ for key in person:
 
 # for key, value in person.items():
     #print(key, value) # this way we get both keys and values printed out
+print('Begin: For loop explained.')
+
+print('Begin: For Else Loop.')
+# method
+# range(start,stop,step)  
+for number in range(11): # range can be utlize by integers
+    print(number)
+else:
+    print('The loop stops at', number)
+
+print('End: For Else Loop.')
+
+print('Begin: Using Pass in a loop.')
+# utlized as a plass holder when you don't want code executed
+for number in range(11): # range can be utlize by integers
+    pass
+print('What do we do now')
